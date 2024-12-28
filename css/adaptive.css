@@ -7,7 +7,7 @@ body{
     background-color: #FBFBFB;
 }
 
-@media (min-width: 1024px){
+@media (max-width: 1024px){
     .jan{
         font-size: 160px;
         text-align: left;
@@ -244,8 +244,4 @@ body{
         font-size: 15px;
         padding: 35% 0% 5% 45%;
     }
-}
-
-@media (min-width: 768px){
-
 }
