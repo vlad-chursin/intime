@@ -28,11 +28,6 @@ body{
     letter-spacing: -10px;
 }
 
-.n-3{
-    grid-row: 1;
-    grid-column: 3;
-}
-
 .winter{
     grid-row: 1;
     grid-column: 4;
@@ -43,6 +38,110 @@ body{
     padding: 5px 0 0 5px;
 }
 
+.winter .typing, .plot .typing, .live-actions .typing, 
+.time-files .typing, .pl .typing, .memory-2 .typing,
+.part-1 .typing, .memory-1 .typing, .part-2 .typing,
+.mem-3 .typing, .text .typing, .text-mem5 .typing,
+.period .typing, .jan .typing, .uary .typing, .memories .typing,
+.name .typing, .group .typing{
+    width: 50%;
+    height: 25px;
+    border-right: 1px solid black;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(40, end) infinite, blink 0.4s step-end infinite;
+}
+
+.plot .typing{
+    height: 20px;
+}
+
+.jan .typing, .uary .typing{
+    height: 200px;
+}
+
+.memories .typing{
+    height: 160px;
+}
+
+.time-files .typing, .memory-2 .typing,
+.memory-1 .typing, .memory-1 .typing,
+.pl .typing, .mem-3 .typing, .text .typing,
+.text-mem5 .typing, .period .typing, 
+.jan .typing, .group .typing{
+    animation: typing-tf 3s steps(40, end) infinite, blink 0.4s step-end infinite;
+}
+
+.uary .typing{
+    animation: typing-uary 3s steps(40, end) infinite, blink 0.4s step-end infinite;
+}
+
+.memories .typing{
+    animation: typing-mem 4s steps(40, end) infinite, blink 0.4s step-end infinite;
+}
+
+.winter p, .plot p, .live-actions p,
+.time-files p, .pl p, .memory-2 p, 
+.part-1 p, .memory-1 p, .part-2 p, .mem-3 p,
+.text p, .text-mem5 p, .period p, .jan p,
+.uary p, .memories p, .name p, .group p{
+    display: inline-block;
+}
+
+@keyframes typing {
+    0%{
+      width: 0%;
+    }
+    80%{
+      width: 60%;
+    }
+    100%{
+        width: 0%;
+      }
+}
+
+@keyframes typing-tf {
+    0%{
+      width: 0%;
+    }
+    80%{
+      width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+
+@keyframes typing-uary {
+    0%{
+      width: 0%;
+    }
+    80%{
+      width: 150%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+
+@keyframes typing-mem {
+    0%{
+      width: 0%;
+    }
+    80%{
+      width: 125%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+
+@keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+}
+
 .date{
     grid-row: 1;
     grid-column: 5;
@@ -51,6 +150,30 @@ body{
     font-weight: 400;
     line-height: 0.8;
     padding: 5px 0 0 5px;
+}
+
+.date .time .text-block {
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    width: 150px;
+    white-space: nowrap;
+    position: relative;
+}
+  
+.date .time .text-block .text-t {
+    display: inline-block;
+    animation: ticks 12s steps(100) infinite;
+    transform: translateX(0);
+}
+  
+@keyframes ticks {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
 }
 
 .img-plot {
@@ -174,14 +297,38 @@ body{
     padding-left: 45%;
 }
 
-.numb{
-    grid-row: 4/ 7;
+.numb {
+    grid-row: 4 / 7;
     grid-column: 1 / 5;
     font-family: "Inter", serif;
     font-size: 600px;
     font-weight: 200;
-    line-height: 0.95;
+    line-height: 0.8;
     letter-spacing: -35px;
+}
+
+.numb .text-block {
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    width: 600px;
+    white-space: nowrap;
+    position: relative;
+}
+  
+.numb .text-block .text-t {
+    display: inline-block;
+    animation: ticks 60s steps(500) infinite;
+    transform: translateX(0);
+}
+  
+@keyframes ticks {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
 }
 
 .text-somebad{
@@ -218,12 +365,16 @@ body{
     font-family: "Inter", serif;
     font-size: 20px;
     font-weight: 400;
-    padding: 200% 0 0 30%;
+    padding: 5px 0 0 5px;
 }
 
 .img-pl{
     grid-row: 5 / 7;
     grid-column: 9 / 11;
+    overflow: hidden;
+    position: relative; 
+    width: 100%; 
+    height: 100%;
 }
 
 .button{
@@ -274,6 +425,10 @@ body{
 .img-part1{
     grid-row: 2;
     grid-column: 10;
+    overflow: hidden;
+    position: relative; 
+    width: 100%; 
+    height: 100%;
 }
 
 .memory-1{
@@ -288,6 +443,10 @@ body{
 .img-mem2{
     grid-row: 3/5;
     grid-column: 6 / 9;
+    overflow: hidden;
+    position: relative; 
+    width: 100%; 
+    height: 100%;
 }
 
 .part-2{
@@ -302,6 +461,10 @@ body{
 .img-mem1{
     grid-row: 4;
     grid-column: 1/4;
+    overflow: hidden;
+    position: relative; 
+    width: 100%; 
+    height: 100%;
 }
 
 .text-mem{
@@ -310,12 +473,17 @@ body{
     font-family: "Inter", serif;
     font-size: 20px;
     font-weight: 400;
-    padding: 5px 0 0 5px;
+    padding: 55px 0 55px 5px;
 }
 
 .img-part2{
     grid-row: 4;
     grid-column: 10;
+    grid-template-rows: 1fr;
+    overflow: hidden;
+    position: relative; 
+    width: 100%; 
+    height: 100%;
 }
 
 .button-2{
@@ -497,11 +665,19 @@ marquee{
 .time-zone .img-tz{
     grid-row: 2;
     grid-column: 9/11;
+    overflow: hidden;
+    position: relative; 
+    width: 100%; 
+    height: 100%;
 }
 
 .time-zone .img-mem3{
     grid-row: 2;
     grid-column: 5;
+    overflow: hidden;
+    position: relative; 
+    width: 100%; 
+    height: 100%;
 }
 
 .time-zone .tz-2-3{
@@ -534,6 +710,10 @@ marquee{
 .time-zone .img-ily{
     grid-row: 3;
     grid-column: 3/5;
+    overflow: hidden;
+    position: relative; 
+    width: 100%; 
+    height: 100%;
 }
 
 .time-zone .mem-3{
@@ -606,6 +786,10 @@ marquee{
 .timing-block .img-mem4{
     grid-row: 1;
     grid-column: 5/9;
+    overflow: hidden;
+    position: relative; 
+    width: 100%; 
+    height: 100%;
 }
 
 .timing-block .text{
@@ -707,4 +891,8 @@ marquee{
 .timing-block .img-mem5{
     grid-row: 3;
     grid-column: 8/11;
+    overflow: hidden;
+    position: relative; 
+    width: 100%; 
+    height: 100%;
 }
