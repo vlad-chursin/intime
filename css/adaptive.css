@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #FBFBFB;
+}
+
+@media (min-width: 1024px){
+    .jan{
+        font-size: 160px;
+        text-align: left;
+        font-family: "Inter", serif;
+        font-weight: 400;
+        line-height: 0.8;
+        letter-spacing: -10px;
+    }
+
+    .winter{
+        font-size: 20px;
+        font-family: "Inter", serif;
+        font-weight: 400;
+        line-height: 0.8;
+        padding: 5px 0 0 5px;
+    }
+
+    .winter .typing, .plot .typing, .live-actions .typing, 
+    .time-files .typing, .pl .typing, .memory-2 .typing,
+    .part-1 .typing, .memory-1 .typing, .part-2 .typing,
+    .mem-3 .typing, .text .typing, .text-mem5 .typing,
+    .period .typing, .jan .typing, .uary .typing, .memories .typing,
+    .name .typing, .group .typing{
+    width: 70%;
+    height: 25px;
+    border-right: 1px solid black;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(40, end) infinite, blink 0.4s step-end infinite;
+    }
+
+    .uary .typing, .jan .typing{
+        animation: typing-uary 3s steps(40, end) infinite, blink 0.4s step-end infinite;
+    }
+    
+    .memories .typing{
+        animation: typing-mem 4s steps(40, end) infinite, blink 0.4s step-end infinite;
+    }
+
+    .plot .typing{
+        height: 15px;
+    }
+    
+    .jan .typing, .uary .typing{
+        height: 160px;
+    }
+    
+    .memories .typing{
+        height: 130px;
+    }
+
+    @keyframes typing {
+        0%{
+          width: 0%;
+        }
+        80%{
+          width: 80%;
+        }
+        100%{
+            width: 0%;
+          }
+    }
+
+    @keyframes typing-tf {
+        0%{
+          width: 0%;
+        }
+        80%{
+          width: 140%;
+        }
+        100%{
+            width: 0%;
+        }
+    }
+    
+    @keyframes typing-uary {
+        0%{
+          width: 0%;
+        }
+        80%{
+          width: 150%;
+        }
+        100%{
+            width: 0%;
+        }
+    }
+
+    @keyframes typing-mem {
+        0%{
+          width: 0%;
+        }
+        80%{
+          width: 140%;
+        }
+        100%{
+            width: 0%;
+        }
+    }
+
+    .date{
+        font-size: 30px;
+    }
+
+    .plot{
+        font-size: 15px;
+    }
+
+    .uary{
+        font-size: 160px;
+        padding-left: 100px;
+    }
+
+    .cal-fu{
+        font-size: 15px;
+    }
+
+    .period{
+        font-size: 15px;
+    }
+
+    .numb {
+        font-size: 400px;
+    }
+
+    .numb .text-block {
+        width: 350px;
+    }
+
+    .text-somebad{
+        font-size: 15px;
+    }
+
+    .live-actions{
+        font-size: 15px;
+    }
+
+    .time-files{
+        font-size: 15px;
+    }
+
+    .pl{
+        font-size: 15px;
+    }
+    
+    .part-1{
+        padding: 80px 0 0 5px;
+        font-size: 15px;
+    }
+
+    .your-mem{
+        font-size: 15px;
+    }
+
+    .memory{
+        padding-top: 50%;
+        padding-left: 35%;
+    }
+
+    .memories{
+        font-size: 120px;
+    }
+
+    .memory-2{
+        font-size: 15px;
+    }
+
+    .memory-1{
+        font-size: 15px;
+    }
+
+    .part-2{
+        font-size: 15px;
+        padding: 300% 0 0 5px;
+    }
+
+    .text-mem{
+        font-size: 15px;
+    }
+
+    .marquee-container{
+        height: 130px;
+    }
+
+    marquee{
+        font-size: 80px;
+    }
+
+    .time-zone .time img{
+        width: 15px;
+        height: 15px;
+    }
+
+    .time-zone .time .block{
+        font-size: 15px;
+    }
+
+    .time-zone .mem-3{
+        font-size: 15px;
+    }
+
+    .time-zone .text-ily{
+        font-size: 15px;
+    }
+
+    .timing-block .text{
+        font-size: 15px;
+    }
+
+    .timing-block .text-tiyl{
+        font-size: 45px;
+    }
+
+    .timing-block .text-mem5{
+        font-size: 15px;
+        padding-top: 210%;
+    }
+
+    .timing-block .text-pil{
+        font-size: 15px;
+        padding-top: 195%;
+    }
+    
+    .timing-block .name{
+        font-size: 15px;
+        padding: 50% 0% 5% 5px;
+    }
+
+    .timing-block .group{
+        font-size: 15px;
+        padding: 100% 0% 5% 15%;
+    }
+    
+    .timing-block .hse{
+        font-size: 15px;
+        padding: 35% 0% 5% 45%;
+    }
+}
+
+@media (min-width: 768px){
+
+}
